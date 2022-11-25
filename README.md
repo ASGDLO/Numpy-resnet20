@@ -6,3 +6,8 @@ OCR number dataset
 
  running command = python3 ./train.py
  
+ 
+ requirment 
+ 
+ cv2
+ matplotlib
