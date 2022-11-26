@@ -2,6 +2,8 @@ from data import *
 from model import *
 from test import *
 import matplotlib.pyplot as plt
+import time
+
 
 class trainer:
     def __init__(self, model, dataset, num_classes, init_lr):
@@ -46,6 +48,10 @@ if __name__ == '__main__':
     accurate = []
     temp = 0
 
+    start_time = time.time()
+    
+    
+
     model.train()
     plt.figure(figsize=(10,5))
     plt.ion()
@@ -54,6 +60,7 @@ if __name__ == '__main__':
         if i % 10 == 0 and i != 0:
             loss.append(temp / 10)
             print("iteration = {} || loss = {}".format(str(i), str(temp/10)))
+            print("--- %s seconds ---" % (time.time() - start_time))
             temp = 0
             if i % 100 == 0:
                 model.eval()
@@ -72,3 +79,5 @@ if __name__ == '__main__':
 
     plt.ioff()
     plt.show()
+    print("--- %s seconds ---" % (time.time() - start_time))
+    
