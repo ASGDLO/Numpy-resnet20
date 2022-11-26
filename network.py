@@ -5,9 +5,8 @@ import numpy as np
 import os
     
 class ResidualBlock(nn.Module):
-    '''
-    实现子module: Residual Block
-    '''
+ 
+
     def __init__(self, inchannel, outchannel, stride=1, shortcut=None):
         super(ResidualBlock, self).__init__()
         self.left = nn.Sequential(
