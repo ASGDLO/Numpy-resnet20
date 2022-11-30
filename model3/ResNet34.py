@@ -1,10 +1,10 @@
-from components.Convolution import Convolution
-from components.BatchNorm import BatchNorm
-from components.MaxPooling import MaxPooling
-from components.Relu import Relu
-from components.Sigmoid import Sigmoid
-from components.AveragePooling import AveragePooling
-from model.ResBlock import ResBlock
+from components3.Convolution import Convolution
+from components3.BatchNorm import BatchNorm
+from components3.MaxPooling import MaxPooling
+from components3.Relu import Relu
+from components3.Sigmoid import Sigmoid
+from components3.AveragePooling import AveragePooling
+from model3.ResBlock import ResBlock
 
 
 class ResNet34:

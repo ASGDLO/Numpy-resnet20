@@ -1,6 +1,6 @@
-from components.BatchNorm import BatchNorm
-from components.Convolution import Convolution
-from components.Relu import Relu
+from components3.BatchNorm import BatchNorm
+from components3.Convolution import Convolution
+from components3.Relu import Relu
 
 
 class ResBlock:
