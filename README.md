@@ -4,4 +4,4 @@ restnet 30 for OCR
 
 Run = python3 ./train.py
 
-depandecy = matplotlib , cv2   
+dependency = matplotlib , cv2   
